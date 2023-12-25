@@ -1,0 +1,17 @@
+<main>
+  {{#each toys}}
+    <div class="container">
+      <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+        <div class="col">
+          <div class="p-12 border bg-light">
+            <img src="{{image}}" alt="" width="100" height="120" />
+            <p>Name: {{name}}</p>
+            <p>Price: {{price}}</p>
+            <p>Category: {{Category.name}}</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  {{/each}}
+</main>

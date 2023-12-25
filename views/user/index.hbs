@@ -1,0 +1,54 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Website Title</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <!--  <div class="collapse navbar-collapse" id="navbarNav">
+          <form action="/search" method="post">
+            <input
+              type="search"
+              id=""
+              name="keyword"
+              required
+              placeholder="Search your toys"
+            />
+            <button type="submit">Search</button>
+          </form>
+        </div> -->
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+          {{#each toys}}
+            <div class="col">
+              <div class="p-3 border bg-light">
+                <img src="{{image}}" alt="" width="220" height="220" />
+                <p style="text-align: center;" > {{name}}</p>
+                <p style="text-align: center;" > {{price}}</p>
+                <p style="text-align: center;" > {{category.name}}</p>
+              </div>
+            </div>
+          {{/each}}
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+a {
+  color: #00aeff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(253, 247, 224);
+  color: #000000;
+  padding: 10px;
+  font-weight: 500;
+}
+
+#menu {
+  list-style:none;
+  display: flex;
+}
+
+#menu .item {
+  margin:0px 25px;
+}
+
+#menu .item a {
+  color:#626A67;
+  text-decoration: none;
+}
+
+#actions {
+  display: flex;
+}
+
+#actions .item {
+  margin-left:22px;
+  color: white;
+}
+
+
+
+
+.img {
+  width: 300px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.logo {
+  display: flex;
+  margin-left: 50px;
+}
+
+.search{
+  width: 100%;
+  padding:0px 30px;
+  margin-top:33px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+
+input[type="search"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none; 
+
+}
+
+
+button[type="submit"] {
+  padding: 8px 12px;
+  background-color: #f488d0;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+button[type="submit"]:hover {
+  background-color: #9e7ef0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+main {
+  padding: 2rem;
+}
+
+footer {
+  background-color: #00c0b6;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  bottom: 0;
+  width: 100%;
+
+}
+
+
+

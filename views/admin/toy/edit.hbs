@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Website Title</title>
+  </head>
+  <body>
+    <main>
+      <form action="/toy/edit/{{ toy._id }}" method="post">
+        <h1>Edit Toy</h1>
+        Name:
+        <input type="text" name="name" id="" required value="{{ toy.name }}">
+        <br><br>
+        Price:
+        <input type="text" name="price" id="" required value="{{ toy.price }}">
+        <br><br>
+        Image:
+        <input type="url" name="image" id="" required value="{{ toy.image }}">
+        <br><br>
+        <img src="{{ toy.image }}" alt="" width="220" height="220" />
+        <br><br>
+        Category: 
+        <select name="category" id="">
+          {{#each categories }}
+            <option value="{{ category.name }}"> {{ name }}</option>
+          {{/each}}
+        </select>
+        <br><br>
+        <input type="submit" value="Edit">
+      </form>
+    </main>
+
+  </body>
+</html>

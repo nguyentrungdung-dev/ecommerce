@@ -1,0 +1,44 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheets/category.css" />
+
+    <title>Website Title</title>
+  </head>
+  <body>
+    <main>
+      <table>
+        <tr>
+          <th>Brand Name</th>
+          <th>Brand Country</th>
+          <th colspan="2">Menu</th>
+        </tr>
+        {{#each categories}}
+          <tr>
+            <td>
+              <a href="/category/detail/{{_id}}">
+                {{name}}
+              </a>
+            </td>
+            <td>{{country}}</td>
+            <td>
+              <a href="/category/edit/{{_id}}" class="edit-btn">Edit</a>
+            </td>
+            <td>
+              <a
+                href="/category/delete/{{_id}}"
+                onclick="return confirm('Are you sure to delete this?');"
+                class="delete-btn"
+              >Delete</a>
+            </td>
+          </tr>
+        {{/each}}
+      </table>
+     <nav>
+       <button class="add-btn" onclick="location.href='/category/add';">Add New Brand</button>
+       <button class="add-btn" onclick="location.href='/toy';">Back Home Admin</button>
+     </nav>
+    </main>
+  </body>
+</html>
